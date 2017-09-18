@@ -8,6 +8,7 @@
  */
 namespace Slim\Tests\Http;
 
+
 use PHPUnit\Framework\TestCase;
 use ReflectionProperty;
 use Slim\Http\Body;
@@ -27,6 +28,7 @@ class BodyTest extends TestCase
 
     protected function tearDown()
     {
+        echo 1;
         if (is_resource($this->stream) === true) {
             fclose($this->stream);
         }
